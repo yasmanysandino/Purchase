@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  font-family: Arial, sans-serif;
+  color: #172033;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #061b33;
+  color: white;
+  padding: 18px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.header-actions button,
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background: #1769e0;
+  color: white;
+}
+
+.btn-green {
+  background: #21a453;
+  color: white;
+}
+
+.btn-red {
+  background: #e53935;
+  color: white;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 20px;
+  padding: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #0b1f3a;
+}
+
+.supplier-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.table-header,
+.row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.2fr 1fr 1fr 90px;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.purchase .table-header,
+.purchase .row {
+  grid-template-columns: 1.2fr 1fr 1fr 90px;
+}
+
+.table-header {
+  background: #061b33;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-card {
+  background: white;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.wh-list {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.wh-list th,
+.wh-list td {
+  padding: 10px;
+  border-bottom: 1px solid #e5eaf0;
+  text-align: left;
+}
+
+.format-box {
+  margin-top: 15px;
+  padding: 12px;
+  background: #edf4ff;
+  border-radius: 8px;
+  color: #1769e0;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 20px;
+}
